@@ -65,11 +65,7 @@ Notice: `NodeJS` should also provide you `npm` and `npx`.
 
    <br></br>
 
-   ***Remember:*** `ctrl + s` to save, React will render any changes that you made.
-
-   <br></br>
-
-   In `index.js`, delete these lines:
+   In `index.js`, delete these lines, ***Remember:*** `ctrl + s` to save, React will render any changes that you made:
    ```js
 
       import React from 'react';
@@ -85,14 +81,14 @@ Notice: `NodeJS` should also provide you `npm` and `npx`.
         document.getElementById('root')
       );
 
-      // If you want your app to work offline and load faster, you can change
-      // unregister() to register() below. Note this comes with some pitfalls.
-      // Learn more about service workers: https://bit.ly/CRA-PWA
+      // If you want your app to work offline and load faster, you can change          //<------Delete
+      // unregister() to register() below. Note this comes with some pitfalls.         //<------Delete
+      // Learn more about service workers: https://bit.ly/CRA-PWA                      //<------Delete
       serviceWorker.unregister();                                                      //<------Delete
 
    ```
 
-   to
+   Expecting:
 
    ```js
 
@@ -115,14 +111,14 @@ Notice: `NodeJS` should also provide you `npm` and `npx`.
 In `App.js`, delete these lines:
 ```js
    import React from 'react';
-   import logo from './logo.svg';                     //<------Delete
+   import logo from './logo.svg';                                    //<------Delete
    import './App.css';
 
    function App() {
      return (
        <div className="App">
          <header className="App-header">
-           <img src={logo} className="App-logo" alt="logo" />              <!-- <<------Delete --> 
+           <img src={logo} className="App-logo" alt="logo" />        <!-- <<------Delete --> 
            <p>
              Edit <code>src/App.js</code> and save to reload.
            </p>
@@ -142,7 +138,7 @@ In `App.js`, delete these lines:
    export default App;
 ```
 
-to
+Expecting:
 
 ```js
    import React from 'react';
@@ -174,36 +170,39 @@ to
 
 # Creating a new component (page)
 
-Let's make a Profile. Create `Profile.js` under `src`, directory: `src/Profile.js`
+Let's make a Profile Page. Create `Profile.js` under `src`, directory: `src/Profile.js`
 
 ![2020-09-04-15-24-47](https://user-images.githubusercontent.com/18486562/92313843-234a9280-ef85-11ea-8b8b-e1e1ae748b7a.png)
 
 <br></br>
 
 In `src/Profile.js`:
+
+## Javascript integration
+
 ```js
 import React from 'react';
+export default function Profile() {
+   //HTML goes into <div>
+    return (
+        <div>
+            
+            HTML IN HERE
+            <br/>
+            Example:
 
-   export default function Profile() {
-       return (
-           <div>
-               
-               HTML IN HERE
+            <h1>HI! My name is THAI</h1>
 
-               Example:
+            BIO:
+            <ul>
+                <li>I like to breathe</li>
+                <li>I lost too much money in the stock market please help :(</li>
+                <li>IDK what to write here</li>
+            </ul>
 
-               <h1>HI! My name is THAI</h1>
-
-               BIO:
-               <ul>
-                   <li>I like to breathe</li>
-                   <li>I lost too much money in the stock market please help :(</li>
-                   <li>IDK what to write here</li>
-               </ul>
-
-           </div>
-       );
-   }
+        </div>
+    );
+}
 ```
 
 ***Notes:*** ReactJS support `HTML` within `Javascript` files. I suggest familiarize yourself with [HTML](https://www.w3schools.com/html/) and [JS](https://www.youtube.com/watch?v=W6NZfCO5SIk). 
@@ -224,17 +223,17 @@ Let's install a new routing package for ReactJS. In shell:
 
 ```
 
-In `src/index.js`, import `react-router-dom` and `create routes`:
+In `src/index.js`, import `react-router-dom`, `Profile.js` and `create routes`:
 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';  //Import react-router-dom
-import Profile from './Profile.js';  //Import our Profile.js page
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';      //Import react-router-dom
+import Profile from './Profile.js';                                           //Import our Profile.js page
 
-//Generating routes
+                                                                            //Generating routes
 const routing = (
   <Router>
     <div>
@@ -244,7 +243,7 @@ const routing = (
   </Router>
 )
 
-//Render routes
+                                                                            //Render "routing" from above
 ReactDOM.render(
   routing,
   document.getElementById('root')
@@ -253,8 +252,7 @@ ReactDOM.render(
 
 ## Navigate to Profile with [http://localhost:3000/profile](http://localhost:3000/profile)
 
-![profile](https://user-images.githubusercontent.com/18486562/92314409-09607e00-ef8c-11ea-8eed-952b44787a67.png)
+![profile](https://user-images.githubusercontent.com/18486562/92976615-bda44d80-f43f-11ea-932d-75872bebdadf.png)
 
 ## We're done!
-
 You just made your first react-page! Here is a [great tutorial](https://www.youtube.com/watch?v=Ke90Tje7VS0) if you are interested.
