@@ -98,6 +98,35 @@ export default App;
 ![image](https://user-images.githubusercontent.com/18486562/92979546-e9c3cc80-f447-11ea-8395-94c54bde29b6.png)
 
 <br/>
+
+## Mapping Array
+```js
+import React, {useState} from 'react';
+import './App.css';
+
+function App() {
+
+  let array = [
+    {name: "Beth", age: 2},
+    {name: "Smith", age: 4}
+  ]
+
+  return (
+    <div>
+      {array.map((val)=>{
+        return <p>{val.name}: {val.age}</p>
+      })}
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Output:
+![image](https://user-images.githubusercontent.com/18486562/98305563-f14eb000-1f76-11eb-81f6-47c393ca28c6.png)
+
+<br/>
 <br/>
 
 # CSS Syntax
