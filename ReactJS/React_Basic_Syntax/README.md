@@ -98,6 +98,35 @@ export default App;
 ![image](https://user-images.githubusercontent.com/18486562/92979546-e9c3cc80-f447-11ea-8395-94c54bde29b6.png)
 
 <br/>
+
+## Mapping Array
+```js
+import React, {useState} from 'react';
+import './App.css';
+
+function App() {
+
+  let array = [
+    {name: "Beth", age: 2},
+    {name: "Smith", age: 4}
+  ]
+
+  return (
+    <div>
+      {array.map((val)=>{
+        return <p>{val.name}: {val.age}</p>
+      })}
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Output:
+![image](https://user-images.githubusercontent.com/18486562/98305563-f14eb000-1f76-11eb-81f6-47c393ca28c6.png)
+
+<br/>
 <br/>
 
 # CSS Syntax
@@ -195,74 +224,3 @@ p[test='ok'] {
 
 ### Output:
 ![image](https://user-images.githubusercontent.com/18486562/92982271-3c09eb00-f452-11ea-8673-a96fb8083aac.png)
-
-<br/>
-<br/>
-
-# Basic Events (With [React-Hook](https://reactjs.org/docs/hooks-intro.html))
-
-## OnClick - Element
-```js
-import React, {useState} from 'react';              //<-------add useState
-import './App.css';
-
-function App() {
-
-  const [myCoolVar, setMyCoolVar] = useState (0)
-  function click() {
-    setMyCoolVar(myCoolVar+1)
-  }
-
-  return (
-    <div>
-      <p> {myCoolVar} </p>
-      <button onClick={()=>{click()}}> CLICK ME </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-### Output:
-
-Original
-
-![image](https://user-images.githubusercontent.com/18486562/92983052-14b51d00-f456-11ea-8ff5-65fc7cba8a60.png)
-
-After click
-
-![image](https://user-images.githubusercontent.com/18486562/92983065-24ccfc80-f456-11ea-8dac-21072a5ccee9.png)
-
-<br/>
-
-## Onchange - Input
-```js
-import React, {useState} from 'react';              //<-------add useState
-import './App.css';
-
-function App() {
-
-  //variable to keep track
-  const [myCoolVar, setMyCoolVar] = useState ('default value goes in here')
-
-  return (
-    <div>
-      <p> {myCoolVar} </p>
-      <input onChange={(event)=>{setMyCoolVar(event.target.value)}}/>
-    </div>
-  );
-}
-
-export default App;
-```
-
-### Output:
-
-Original
-
-![image](https://user-images.githubusercontent.com/18486562/92982891-129e8e80-f455-11ea-806b-93f823b7d4ef.png)
-
-New Input
-
-![image](https://user-images.githubusercontent.com/18486562/92982942-4974a480-f455-11ea-805c-3427b618b8c3.png)
