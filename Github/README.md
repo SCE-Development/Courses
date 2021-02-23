@@ -9,16 +9,16 @@
 
 ## Making a Repo
 **STEP 1** 
-![](/images/RepoCreate.png)
+![](./images/RepoCreate.png)
 Click on the New button on the left-hand side
 
 **STEP 2**
-![](/images/createNew.png)
+![](./images/createNew.png)
 Fill in desired info! And your repo has been created! 
 
 ## Cloning a Repo
 **STEP 1** 
-![](/images/cloneRepo.png)
+![](./images/cloneRepo.png)
 Click on the code button and copy the link. Once the link is copied, go to the terminal of your choice and cd into the directory in which you wish to clone your repo. 
 
 
@@ -53,7 +53,7 @@ Replace the link with the link you copied in Step 1. (For this workshop simply c
 - ``` git add <file>``` Stages a particular file for commit
 
 
-![](/images/gitAdd.png)
+![](./images/gitAdd.png)
 
 **Step 2** Commiting Your Changes
 
@@ -83,7 +83,7 @@ Replace the link with the link you copied in Step 1. (For this workshop simply c
 STEP 1:  ``` git rebase -i master``` Starts the squashing process.
 
 STEP 2: You should have entered vim. Press 'i' in order to insert or type into VIM except the first . You should see something like this: 
-![](/images/beforeSquash.png)
+![](./images/beforeSquash.png)
 
 STEP 3: Change all the commits below the first one to say either 's' or squash, instead of pick. Leave the first one to say pick! 
 
@@ -91,7 +91,7 @@ STEP 4: After your done exit out of VIM.
 
 STEP 5: You should enter a history of all the past commit messages. (Make sure your commit messages are informational, not like the ones shown in the image!) In VIM press 'dd' in order to delete all the past commits and leave it to have one useful commit message, once you are done exit VIM again. 
 
-![](/images/bigCommitMessage.png)
+![](./images/bigCommitMessage.png)
 
 *Sometimes you will be asked to do these steps multiple times, that is normal*
 
@@ -101,7 +101,7 @@ STEP 7: Check Github and make sure your branch only shows one commit, if not rep
 
 
 
-##created by Seema Vora 
+###### Created by Seema Vora 
 
 
 
