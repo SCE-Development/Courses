@@ -67,7 +67,9 @@ As mentioned above,  vi is for "power users." It is capable of far more than a b
 Note, vi is not complicated; it's just different than what you're probably used to. There are plenty of tutorials online that will explain how to use vi properly. Here, we'll just go over how to insert text, save, and exit. 
 
 `vi text_file` #create a new file called text_file and open in vi
+
 type `i` this puts you in insert mode (so you can start typing).
+
 Type what ever you'd like, then hit `esc`, `:wq`. You'll save and exit your text document.
 
 ***Quick Example of VI Capabilities***
