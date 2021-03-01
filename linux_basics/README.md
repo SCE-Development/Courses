@@ -34,7 +34,7 @@ Notice that Desktop and Documents are not related in any way. You can't start in
 
 `pwd ` #/root/Desktop
 
-`cd .. `#The .. takes you up one directory (in other words, it takes you out of the current directory, and back to the previous one).
+`cd .. `#The `..` takes you up one directory (in other words, it takes you out of the current directory, and back to the previous one).
 
 `cd Desktop/dir` #Now that you're out of the Documents folder, you can `cd` into the dir folder, which is located on the Desktop. 
 
@@ -52,11 +52,18 @@ Ex:
 If you're on the desktop and want to know what other directories/ documents are present, type `ls`. You'll see a list of everything on the desktop.
 
 `cd Desktop` #Navigate to the desktop (if you're not already there)
+
 `ls` #(List all other folders/documents on the desktop). 
 
-nano 
-vi 
-gedit
+
+# `nano` (Basic Text Editor)
+
+The `nano` command does two things at once; it creates a new text document, and then opens a window where you can begin typing into your text document. If you don't follow the nano command with a name, the file will be unnamed until you save and exit. Otherwise, you can just type `nano <name>` and you'll create a text document (in your current directory) with whatever name you supplied. 
+
+The nano editor is a simple text editor (note you will not be able to click, you'll have to use arrow keys to move around). Nano is good for beginners but `vi` is a much more powerful text editor. It's recommended you first get used to using nano before moving onto `vi`. 
+
+To save your text document follow the key combos at the bottom of the screen (ctrl x, y, enter).
+
 CONCEPT: piping
 CONCEPT: redirecting
 And probably more commands, stay tuned!
