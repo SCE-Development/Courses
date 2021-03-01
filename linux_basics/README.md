@@ -186,7 +186,7 @@ Let's say you want to print the contents of one file to another. This can be acc
     
     1). PRACTICE PRACTICE PRACTICE!
 
-    2). STUDY THE `ps` command and understand how to kill/restart processess.
+    2). STUDY THE ps command and understand how to kill/restart processess.
 
     3). KEEP PRACTICING!
 
