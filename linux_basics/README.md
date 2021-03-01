@@ -22,7 +22,7 @@ Let's say you have a folder on your desktop called "dir". To go from your curren
 
 `Desktop --> dir` #Desktop and dir are related
 
-`Documents` #Documents is solated
+`Documents` #Documents is isolated
 
 Notice that dir and Documents are not related in any way. You can't start in the Documents directory and then try to gain access to dir. If you want to get to dir from Documents, you'll have to naviagte out of the directory, into Desktop, and then into dir. Here are the commands: 
 
