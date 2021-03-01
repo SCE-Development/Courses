@@ -133,6 +133,8 @@ OUTPUT:
 
 a
 
+apple
+
 carrot
 
 Note, `ls grep a` does not work. Ask yourself this if you don't understand why: what are you trying to execute? ls, grep, or a? How is the computer supposed to know what  you're talking about? The `|` allows you to "funnel" the output and get only what you want. 
