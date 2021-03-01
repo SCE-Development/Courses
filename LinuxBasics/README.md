@@ -16,7 +16,7 @@ Use the cd command to navigate to a certain directory.
 
 Example: 
 
-Let's say you have a folder on your desktop called "dir". To go from your current directory (Desktop) to the folder (dir), just type the word `cd dir`. 
+Let's say you have a folder on your desktop called "dir". To go from your current directory (Desktop) to the folder (dir), just type the command `cd dir`. 
 
 ***NOTE:*** this won't work if you're in another directory (say your Documents folder) because the path isn't clear. 
 
