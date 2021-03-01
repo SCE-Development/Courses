@@ -1,8 +1,4 @@
 # Linux 
-You've heard about it, and you've probably used it without knowing, but what is it?
-
-
-Well first and foremost, it's an operating system, much like Windows and Mac OS. The only difference is it's open source, which means other people can contribute to it. This is the reason there's so many "flavors" of Linux (***Ubuntu, CentOS, the list goes on...***)
 
 The purpose of this document is to give a brief introduction to popular Linux commands. It's recommended that you try to replicate the procedure in a GUI environment (with a mouse). You'll find that once you get the hang of using a terminal, it's much faster than clicking around with a mouse. 
 
