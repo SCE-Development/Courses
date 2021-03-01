@@ -6,7 +6,7 @@ Well first and foremost, it's an operating system, much like Windows and Mac OS.
 
 The purpose of this document is to give a brief introduction to popular Linux commands. It's recommended that you try to replicate the procedure in a GUI environment (with a mouse). You'll find that once you get the hang of using a terminal, it's much faster than clicking around with a mouse. 
 
-FIRST STEP: Open up Windows Explorer or Finder on your windows PC/Mac. Navigate to the desktop, create a new folder (call it dir), open it, then create a text document. 
+FIRST STEP: Open up Windows Explorer or Finder on your windows PC/Mac. Navigate to the desktop, create a new folder, open it, then create a text document. 
 
 If you understand what you just did, then you already have a good grip on naviagating directories. We'll be replicating the above steps using a terminal. 
 
