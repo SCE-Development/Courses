@@ -12,6 +12,7 @@ If you understand what you just did, then you already have a good grip on naviag
 
 # `pwd` (Print Working Directory)
 ***Note directory is synonmous with folder***
+
 Use this command to find out where you're located. If you're on your desktop, you'll see something like this: `/root/Desktop`
 
 # `cd` (Current Directory)
