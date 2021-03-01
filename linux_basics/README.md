@@ -108,7 +108,7 @@ Let's say your on the Desktop and you have three directories (a, b,c, apple, car
 
 To see a list of those directories, you'd just type `ls`. 
 
-Output: 
+***Output:***
 
 a
 
@@ -122,13 +122,6 @@ carrot
 
 christopherColumbus
 
-A visual representation: 
-
-DESKTOP
-
-  |
-  
-[a] [b] [c] [carrot] [christopherColumbus]
 
 Now, if you wanted to search for directories that had the letter 'a' in them, you'd use the grep command (grep = search). 
 
@@ -154,7 +147,7 @@ Start with `grep c`. This will list only the documents/directories that contain 
 
 The `grep a` then funnels the output further; only output that contains the letter a will be listed. 
 
-OUTPUT: 
+***OUTPUT:***
 
 carrot
 
