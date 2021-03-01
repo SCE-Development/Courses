@@ -4,7 +4,7 @@ The purpose of this document is to give a brief introduction to popular Linux co
 
 FIRST STEP: Open up Windows Explorer or Finder on your windows PC/Mac. Navigate to the desktop, create a new folder, open it, then create a text document. 
 
-If you understand what you just did, then you already have a good grip on naviagating directories. We'll be replicating the above steps using a terminal. 
+If you understand what you just did, then you already have a good grip on navigating directories. We'll be replicating the above steps using a terminal. 
 
 # `pwd` (Print Working Directory)
 ***Note directory is synonmous with folder***
