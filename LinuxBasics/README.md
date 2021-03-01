@@ -188,5 +188,5 @@ Let's say you want to print the contents of one file to another. This can be acc
 
     3). KEEP PRACTICING!
 
-***Author: Rocky Kandah***
+***Author: Rakan Kandah***
 
