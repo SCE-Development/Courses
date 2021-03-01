@@ -21,17 +21,23 @@ Use the cd command to navigate to a certain directory.
 Example: 
 
 Let's say you have a folder on your desktop called "dir". To go from your current directory (Desktop) to the folder (dir), just type the word `cd dir`. 
+
 ***NOTE:*** this won't work if you're in another directory (say your home folder) because the path isn't clear. 
+
 Here's a visual: 
 
 Desktop --> dir
+
 Documents
 
 Notice that Desktop and Documents are not related in any way. You can't start in the Documents directory and then try to gain access to dir. If you want to get to dir from Documents, you'll have to naviagte out of the directory, into Desktop, and then into dir. Here are the commands: 
 
 `pwd ` #/root/Desktop
+
 `cd .. `#The .. takes you up one directory (in other words, it takes you out of the current directory, and back to the previous one).
+
 `cd Desktop/dir` #Now that you're out of the Documents folder, you can `cd` into the dir folder, which is located on the Desktop. 
+
 It is ***highly*** recommended you follow these steps in a GUI before replicating them in your terminal. You'll visually see what's happening and understand the process. 
 
 # `mkdir` (Make directory/folder)
