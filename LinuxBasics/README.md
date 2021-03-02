@@ -6,6 +6,10 @@ FIRST STEP: Open up Windows Explorer or Finder on your windows PC/Mac. Navigate 
 
 If you understand what you just did, then you already have a good grip on navigating directories. We'll be replicating the above steps using a terminal. 
 
+If you have linux already, just open up terminal. If you're running Windows or Mac OS, you can download virtual box and run Ubuntu.
+
+If that's too much work, you can just use this link to follow along (Note, it doesn't come with a Desktop directory, so it's recommended you type `mkdir Desktop` once the site loads. The command may not make sense right now, but it will make it easier to follow along. 
+
 # `pwd` (Print Working Directory)
 ***Note directory is synonmous with folder***
 
