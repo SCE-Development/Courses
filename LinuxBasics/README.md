@@ -8,7 +8,7 @@ If you understand what you just did, then you already have a good grip on naviga
 
 If you have linux already, just open up terminal. If you're running Windows or Mac OS, you can download virtual box and run Ubuntu.
 
-If that's too much work, you can just use this link to follow along (Note, it doesn't come with a Desktop directory, so it's recommended you type `mkdir Desktop` then `cd Desktop` ***(case sensitive)*** once the site loads. The command may not make sense right now, but it will make it easier to follow along. 
+If that's too much work, you can just use this link (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) to follow along (Note, it doesn't come with a Desktop directory, so it's recommended you type `mkdir Desktop` then `cd Desktop` ***(case sensitive)*** once the site loads. The command may not make sense right now, but it will make it easier to follow along. 
 
 # `pwd` (Print Working Directory)
 ***Note directory is synonmous with folder***
