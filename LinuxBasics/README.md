@@ -2,16 +2,16 @@
 
 The purpose of this document is to give a brief introduction to popular Linux commands. It's recommended that you try to replicate the procedure in a GUI environment (with a mouse). You'll find that once you get the hang of using a terminal, it's much faster than clicking.
 
-FIRST STEP: Open up Windows Explorer or Finder on your windows PC/Mac. Navigate to the desktop, create a new folder, open it, then create a text document. 
+FIRST STEP: Open up Windows Explorer or Finder on your Windows PC/Mac. Navigate to the desktop and create a new folder (call it anything you like). Now open the folder and create an empty text document. 
 
 If you understand what you just did, then you already have a good grip on navigating directories. We'll be replicating the above steps using a terminal. 
 
-If you have linux already, just open up terminal. If you're running Windows or Mac OS, you can download virtual box and run Ubuntu.
+If you have Linux already, just open up terminal. If you're running Windows or Mac OS, you can download virtual box and run Ubuntu.
 
 If that's too much work, you can just use this link (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) to follow along (Note, it doesn't come with a Desktop directory, so it's recommended you type `mkdir Desktop` then `cd Desktop` ***(case sensitive)*** once the site loads. The command may not make sense right now, but it will make it easier to follow along. 
 
 # `pwd` (Print Working Directory)
-***Note directory is synonmous with folder***
+***Note directory is synoynmous with folder***
 
 Use this command to find out where you're located. If you're on your desktop, you'll see something like this: `/root/Desktop`
 
@@ -28,7 +28,7 @@ Let's say you have a folder on your desktop called "dir". To go from your curren
 
 `Documents` #Documents is isolated
 
-Notice that dir and Documents are not related in any way. You can't start in the Documents directory and then try to gain access to dir. If you want to get to dir from Documents, you'll have to naviagte out of the directory, into Desktop, and then into dir. Here are the commands: 
+Notice that dir and Documents are not related in any way. You can't start in the Documents directory and then try to gain access to dir. If you want to get to dir from Documents, you'll have to navigate out of the directory, into Desktop, and then into dir. Here are the commands: 
 
 `pwd ` #/root/Documents
 
@@ -62,13 +62,13 @@ If you're on the desktop and want to know what other directories/ documents are 
 
 # `nano` (Basic Text Editor)
 
-The `nano` command does two things at once; it creates a new text document, and then opens a window where you can begin typing into your text document. If you don't follow the nano command with a name, the file will be unnamed until you save and exit. Otherwise, you can just type `nano <name>` and you'll create a text document (in your current directory) with whatever name you supplied. 
+The `nano` command does two things at once; it creates a new text document and then opens a window where you can begin typing into your text document. If you don't follow the nano command with a name, the file will be unnamed until you save and exit. Otherwise, you can just type `nano <name>` and you'll create a text document (in your current directory) with whatever name you supplied. 
 
 The nano editor is a simple text editor (note you will not be able to click, you'll have to use arrow keys to move around). Nano is good for beginners but `vi` is a much more powerful text editor. It's recommended you first get used to using nano before moving onto `vi`. 
 
 To save your text document follow the key combos at the bottom of the screen (ctrl x, y, enter)
 
-To display the contents of a text file, type `cat <name>`. The output will print to the terminal window (if you wish to print the output to another document, refer the redirecting section at the bottom of the page).  
+To display the contents of a text file, type `cat <name>`. The output will print to the terminal window (if you wish to print the output to another document, refer to the redirecting section at the bottom of the page).  
 
 To delete a file, type `rm <name>`
 
@@ -82,7 +82,7 @@ Note, vi is not complicated; it's just different than what you're probably used 
 
 type `i` this puts you in insert mode (so you can start typing).
 
-Type what ever you'd like, then hit `esc`, `:wq`. You'll save and exit your text document.
+Type whatever you'd like, then hit `esc`, `:wq`. You'll save and exit your text document.
 
 ***Quick Example of VI Capabilities***
 
@@ -94,11 +94,11 @@ Type what ever you'd like, then hit `esc`, `:wq`. You'll save and exit your text
 
 `I'm writing on a new line.`
 
-To delete a whole line of text in a basic editor, you'd have to start from the end and hold delete/backspace. In vi, you can just type `esc`, `dd`. Now the entire line is gone. You can type `u` to undo the command. This is one of MANY vi features, and is simply supposed to introduce you to what can be done with a powerful text editor.
+To delete a whole line of text in a basic editor, you'd have to start from the end and hold delete/backspace. In vi, you can just type `esc`, `dd`. Now the entire line is gone. You can type `u` to undo the command. This is one of MANY vi features and is simply supposed to introduce you to what can be done with a powerful text editor.
 
 # Important Concepts
 
-We've just gone over a few basic terminal commands. There are MANY more, but these should give you a good grip on the basics. Next we'll going over some basic concepts (piping and redirecting). This is a little more advanced, but not especially difficult. It is recommended that you have a solid foundation on the above examples before moving forward. 
+We've just gone over a few basic terminal commands. There are MANY more, but these should give you a good grip on the basics. Next, we'll be going over some basic concepts (piping and redirecting). This is a little more advanced, but not especially difficult. It is recommended that you have a solid foundation on the above examples before moving forward. 
 
 # Piping
 
@@ -106,7 +106,7 @@ Piping is a form of redirection. It can be used to route output in any direction
 
 Here's an example:
 
-Let's say your on the Desktop and you have three directories (a, b,c, apple, carrot, christopherColumbus). 
+Let's say you're on the Desktop and you have three directories (a, b,c, apple, carrot, christopherColumbus). 
 
 To see a list of those directories, you'd just type `ls`. 
 
@@ -127,9 +127,9 @@ christopherColumbus
 
 Now, if you wanted to search for directories that had the letter 'a' in them, you'd use the grep command (grep = search). 
 
-To list out all the directories with ONLY a, type: `ls | grep a`
+To list out all the directories with ONLY 'a', type: `ls | grep a`
 
-The ls stands for list, and the | acts as a pipe. We're directing the output to only feed through directories/documents that contain the letter 'a'. 
+The ls stands for list and the | acts as a pipe. We're directing the output to only feed through directories/documents that contain the letter 'a'. 
 
 OUTPUT: 
 
@@ -139,9 +139,9 @@ apple
 
 carrot
 
-Note, `ls grep a` does not work. Ask yourself this if you don't understand why: what are you trying to execute? ls, grep, or a? How is the computer supposed to know what  you're talking about? The `|` allows you to "funnel" the output and get only what you want. 
+Note, `ls grep a` does not work (try it). Ask yourself this if you're not sure why - what are you trying to execute? ls, grep, or a? How is the computer supposed to know which command you mean? The `|` allows you to "funnel" the output and get only what you want.
 
-Another note, you can have multiple `|` in an expression. 
+Note, you can have multiple `|` in an expression. 
 
 Ex: 
 
@@ -160,7 +160,7 @@ carrot
 
 # Redirecting
 
-Redirecting relies on the following two symbols: `<` & `>`. They are fairly simple to use if you think about the acute angled side as the funnel. 
+Redirecting relies on the following two symbols: `<` & `>`. They are fairly simple to use if you think about the acute-angled side as the funnel. 
 
 Example: 
 
@@ -188,7 +188,7 @@ Let's say you want to print the contents of one file to another. This can be acc
     
     1). PRACTICE PRACTICE PRACTICE!
 
-    2). STUDY THE ps command and understand how to kill/restart processess.
+    2). STUDY THE ps command and understand how to kill/restart processes.
 
     3). KEEP PRACTICING!
 
