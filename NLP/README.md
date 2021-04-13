@@ -6,5 +6,7 @@ We'll submit our solutions to the Kaggle contest [here](https://www.kaggle.com/c
 
 1. Open the workshop in [Google Colab](https://colab.research.google.com/drive/1eTZXrU3ZfZNEXq0uGMs7fGznuVRC3QwB?usp=sharing)
 2. Complete the sections marked `'''TODO'''` (you'll have to reference the library documentation if you're not doing this live)
-3. If you get stuck, you can look at [my solution](./nlp_solution.ipynb)
+3. If you get stuck, you can look at [my solution](https://nbviewer.jupyter.org/github/SCE-Development/Courses/blob/master/NLP/nlp_solution.ipynb)
 4. Once you classify the test data set, login to Kaggle and submit your solution!
+
+Note that you might not be able to view the Jupyter Notebooks in GitHub. Try opening it in [nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/SCE-Development/Courses/tree/master/NLP/) instead.
