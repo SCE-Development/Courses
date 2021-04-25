@@ -1,3 +1,6 @@
+# Link to the PPT!
+https://docs.google.com/presentation/d/1JNazjCdp3TxSqJHE7cxQ_gUZWIplx-utYgYAGHhqf4U/edit?usp=sharing
+
 # Simple_Code_Runner
 This is a code runner for python, useful for competitive programming, to test your code your self
 ** The Runner.py may not work for mac OS or linus, I have only tested with Windows 10
